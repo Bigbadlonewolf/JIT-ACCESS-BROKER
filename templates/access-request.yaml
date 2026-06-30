@@ -1,0 +1,15 @@
+# Copy this template to create a new access request
+# File naming convention: YYYYMMDD-username-access-type.yaml
+# Place in the requests/ directory and open a PR
+
+requester: your-email@example.com
+resource: projects/your-project-id
+role: roles/compute.viewer
+justification: "Specific business justification for this access (min 10 characters)"
+duration: 4h
+emergency: false
+requested_at: "2025-06-30T09:00:00Z"
+
+# For emergency access only:
+# approver: approver-email@example.com
+# ciso_approved: true  # Required for primitive roles (roles/owner, roles/editor)
